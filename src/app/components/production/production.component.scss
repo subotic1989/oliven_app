@@ -1,0 +1,44 @@
+.production {
+  background-color: var(--light-two);
+  position: relative;
+
+  &__container {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    align-items: center;
+  }
+
+  &__olive {
+    &--title {
+    }
+
+    &--text {
+      text-align: justify;
+    }
+  }
+
+  &__img {
+  }
+
+  &__shape {
+    position: absolute;
+
+    &--wave {
+      top: 0;
+    }
+    &--line {
+      transform: scaleX(-1);
+      top: 0;
+    }
+
+    &--olive {
+      opacity: 0.1;
+      width: 100%;
+      max-width: 800px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -20%);
+    }
+  }
+}

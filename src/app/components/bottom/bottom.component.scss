@@ -1,0 +1,27 @@
+.bottom {
+  background-color: var(--dark-one);
+  padding-top: 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__guarantee {
+    &--title {
+      color: var(--light-one);
+    }
+
+    &--text {
+      color: var(--light-one);
+    }
+  }
+}
+
+.title-h2 {
+  &:after {
+    display: none !important;
+  }
+}

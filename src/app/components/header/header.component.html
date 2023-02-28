@@ -1,0 +1,60 @@
+<header class="header">
+  <div class="header__container container">
+    <div class="header__nav">
+      <!-- LOGO -->
+
+      <div class="header__logo"></div>
+
+      <!-- END LOGO -->
+      <!-- NAV -->
+
+      <div class="header__links" [ngClass]="{ open: isMenuOpen }">
+        <ul>
+          <li>
+            <a href="#home">home</a>
+          </li>
+          <li>
+            <a href="#about">about us</a>
+          </li>
+          <li>
+            <a href="#product">product</a>
+          </li>
+          <li>
+            <a href="#production">production</a>
+          </li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- END NAV -->
+      <!-- HAMBURGER MENU -->
+
+      <div
+        class="hamburger-menu"
+        [ngClass]="{ open: isMenuOpen }"
+        (click)="toggleHamburgerMenu()"
+      >
+        <div class="bar"></div>
+      </div>
+
+      <!-- END HAMBURGER MENU -->
+    </div>
+  </div>
+
+  <!-- SHAPE -->
+
+  <img
+    src="../../../assets/img/shapes/blob-1.svg"
+    alt=""
+    class="header__shape header__shape--blob"
+  />
+  <img
+    src="../../../assets/img/shapes/blob-line-1.svg"
+    alt=""
+    class="header__shape header__shape--line"
+  />
+
+  <!-- END SHAPE -->
+</header>

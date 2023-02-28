@@ -1,0 +1,21 @@
+.footer {
+  background-color: #0c1001;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+  }
+
+  &__copyright {
+    &--text {
+      margin-right: 0.5rem;
+      color: var(--main-color);
+      font-size: 0.9rem;
+    }
+    &--img {
+      width: 30px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.home {
+  background-color: var(--light-two);
+  width: 100%;
+  position: relative;
+
+  &__container {
+    min-height: calc(100vh - 6rem);
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    &--h1 {
+      font-size: var(--font-size-1);
+      text-transform: capitalize;
+      color: var(--dark-one);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    &--subtitle {
+      font-size: var(--font-size-5);
+      color: var(--dark-three);
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+
+    &--blob {
+      max-width: 69vw;
+      right: -45vw;
+      top: 58vh;
+      z-index: 5;
+      transform: rotate(73deg);
+    }
+
+    &--line {
+      max-width: 70vw;
+      right: -45vw;
+      top: 56vh;
+      z-index: 5;
+      transform: rotate(74deg);
+    }
+  }
+}

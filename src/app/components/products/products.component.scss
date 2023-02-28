@@ -1,0 +1,45 @@
+.products {
+  position: relative;
+  overflow: hidden;
+
+  &__container {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__img {
+    max-width: 500px;
+  }
+
+  &__content {
+    &--text {
+      text-align: justify;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+
+    &--wave {
+      top: 0;
+    }
+
+    &--line {
+      top: 0;
+      top: -11px;
+      width: 120%;
+    }
+
+    &--olive {
+      opacity: 0.1;
+      width: 100%;
+      max-width: 600px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -40%);
+    }
+  }
+}

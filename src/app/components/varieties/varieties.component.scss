@@ -1,0 +1,38 @@
+.varieties {
+  position: relative;
+  width: 100%;
+  padding: 5rem 0 !important;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__card {
+    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 420px;
+    border-radius: 0.5rem;
+
+    &--img {
+      border-radius: 50%;
+      height: 250px;
+      width: 250px;
+      margin-bottom: 1rem;
+    }
+
+    &--title {
+      color: var(--dark-one);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      font-size: var(--font-size-4);
+    }
+
+    &--text {
+      color: var(--dark-three);
+    }
+  }
+}

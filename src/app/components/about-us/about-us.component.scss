@@ -1,0 +1,35 @@
+.about {
+  background-color: var(--light-two);
+  position: relative;
+
+  &__container {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    align-items: center;
+  }
+
+  &__olive {
+    &--text {
+      text-align: justify;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+    top: 0;
+
+    &--line {
+      transform: scaleX(-1);
+    }
+
+    &--olive {
+      opacity: 0.1;
+      width: 100%;
+      max-width: 900px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -20%);
+    }
+  }
+}
